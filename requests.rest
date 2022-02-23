@@ -1,0 +1,31 @@
+GET http://localhost:3001/lists
+
+###
+
+POST http://localhost:3001/list/new
+Content-Type: application/json
+
+{
+  "listName": "make todo lists"
+}
+
+###
+
+DELETE http://localhost:3001/list/delete/6213404e7bbce4aefe0f0bcd
+
+###
+
+PUT http://localhost:3001/list/add/62146cb9b5a360cc581c86af
+Content-Type: application/json
+
+{
+  "task": "hello"
+}
+
+###
+
+PUT http://localhost:3001/list/remove/621596ae0df6713ee920d928/621596d83943cb3dfad717b4
+
+###
+
+PUT http://localhost:3001/list/complete/62140de7bc6f194b257476d1/6214adbd396d0aa60822dc38
